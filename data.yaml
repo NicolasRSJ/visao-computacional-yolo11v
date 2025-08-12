@@ -6,5 +6,15 @@ test: images/test
 names:
   0: Bola
 
-# Para executar o treinamento use o seguinte comando:
-# yolo detect train model=yolo11n.pt data=data.yaml imgsz=640 epochs=100 batch=16
+# Comando de Treinamento
+# yolo train model=yolo11n.pt data=data.yaml imgsz=640 epochs=100 batch=2 device=cpu workers=2
+
+# Explicação da notação:
+# YOLO -> Comando principal da biblioteca Ultralytics
+# TRAIN -> Informa que será feito um treinamento
+# MODEL -> Modelo base que será usado (Caso não tenha GPU utilize o yolo11n.pt)
+# DATA -> Caminho para o arquivo YAML que descreve o dataset
+# IMGSZ -> Define o tamanho da imagem usada no treinamento (Redimensiona mantendo proporção)
+# EPOCHS -> Quantidade de épocas (Quantas vezes o modelo vai passar por todo o conjunto de treino. Interfere na precisão.)
+# BATCH -> Número de imagens processadas por lote (Sem GPU é recomendado 1 ou 2 no máximo, para não força a memória).
+# WORKERS -> Define quantos processos de carregamento de dados são criados para essa tarefa.
