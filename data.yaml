@@ -5,3 +5,6 @@ test: images/test
 
 names:
   0: Bola
+
+# Para executar o treinamento use o seguinte comando:
+# yolo detect train model=yolo11n.pt data=data.yaml imgsz=640 epochs=100 batch=16
