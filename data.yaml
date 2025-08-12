@@ -1,4 +1,7 @@
 path: dataset/futevolei
 train: images/train
 val: images/val
-names: [quadra_areia]
+test: images/test
+
+names:
+  0: Bola
