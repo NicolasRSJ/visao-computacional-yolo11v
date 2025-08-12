@@ -1,0 +1,4 @@
+path: dataset/futevolei
+train: images/train
+val: images/val
+names: [quadra_areia]
