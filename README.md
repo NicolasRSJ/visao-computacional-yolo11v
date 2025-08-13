@@ -2,8 +2,6 @@
 
 Essa branch é utilizada para fazer o treinamento e validação do primeiro modelo do projeto.
 
----
-
 ## Estrutura do Projeto
 
 ├── data.yaml # Configuração do dataset para treinamento, validação e teste. 
@@ -23,8 +21,6 @@ Essa branch é utilizada para fazer o treinamento e validação do primeiro mode
 │ └── detect 
 │   └── train
 └── teste.mp4 # Vídeo de teste. (Não encontrado no repositório Github.)
-
----
 
 ## Executando treinamentos e testando modelos.
 
@@ -59,5 +55,3 @@ yolo train model=futevolei1n.pt data=data.yaml imgsz=640 epochs=100 batch=2 devi
 ```bash
 python './run_model.py'
 ```
-
----
