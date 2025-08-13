@@ -40,7 +40,7 @@ python -m venv venv
 ```
 3. Instalar biblioteca Ultralytics
 ```bash
-python -m venv venv
+pip install ultralytics
 ```
 4. Finalizando ambiente virtual
 ```bash
